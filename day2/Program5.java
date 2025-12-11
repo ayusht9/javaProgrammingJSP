@@ -1,5 +1,3 @@
-package condition.ifElseLadder;
-
 import java.util.Scanner;
 
 public class Program5 {
