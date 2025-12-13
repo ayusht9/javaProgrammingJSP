@@ -1,4 +1,4 @@
-// Perfect number
+// Perfect number and Perfect range
 
 class Program1 {
 	public static boolean isPerfect(int num) {
@@ -15,7 +15,16 @@ class Program1 {
 		return fSum == num;
 	    
 	}
+
+	public static void pefectRange(int low, int high) {
+		for(int i=low; i<=high; i++)
+			if(isPerfect(i))
+				System.out.print(i+" ");
+		System.out.println();
+	}
+
     public static void main(String[] args) {
-     	System.out.println(isPerfect(6));   
+     	System.out.println(isPerfect(6)); 
+     	pefectRange(1,100);  
     }
 }

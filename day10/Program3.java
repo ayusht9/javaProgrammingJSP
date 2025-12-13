@@ -11,22 +11,18 @@ class Program3 {
 		return factor==2;
 	}
 
-	public static int countPrime(int num) {
-	    int count=0;
-        for(int i=1; i<=num; i++)
-        	if(isPrime(i)){
-        		count++;
-        	}
-        return count;
+	public static void primeRange(int low, int high) {
+		for(int i=low; i<=high; i++)
+			if(isPrime(i))
+				System.out.print(i+" ");
+		System.out.println();
 	}
 
 
     public static void main(String[] args) {
-    	int count=0;
-        for(int i=1; i<=100; i++)
-        	if(isPrime(i))
-        		System.out.print(i+" ");
+    	primeRange(1,10);
+    	primeRange(1,100);
+    	primeRange(100,200);
 
-        System.out.println(countPrime(100));
     }
 }

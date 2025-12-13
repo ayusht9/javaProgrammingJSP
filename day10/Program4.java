@@ -15,8 +15,16 @@ class Program4 {
 
 	    return sum==num;
 	}
+
+	public static void strongRange(int low, int high) {
+		for(int i=low; i<=high; i++)
+			if(isStrong(i))
+				System.out.print(i+" ");
+	}
+
     public static void main(String[] args) {
         System.out.println(isStrong(145));
         System.out.println(isStrong(153));
+		strongRange(100,200);
     }
 }

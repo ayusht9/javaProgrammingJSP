@@ -20,10 +20,19 @@ class Program2 {
 		return false;
 	}
 
+	public static void happyRange(int low, int high) {
+		for(int i=Math.abs(low); i<=Math.abs(high); i++){
+			if(isHappy(i))
+				System.out.println(i);
+		}
+	}
+
     public static void main(String[] args) {
         System.out.println(isHappy(12));
         System.out.println(isHappy(10));
         System.out.println(isHappy(1));
         System.out.println(isHappy(0));
+
+        happyRange(10,20);
     }
 }
