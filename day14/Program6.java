@@ -6,6 +6,7 @@ class Program6 {
 			}
 			System.out.println();
 		}
+		System.out.println();
 	}
 	public static void two(int num) {
 		for(int row = 1; row <= num; row++){
@@ -14,6 +15,7 @@ class Program6 {
 			}
 			System.out.println();
 		}
+		System.out.println();
 	}
 	public static void three(int num) {
 		int n = 1;
@@ -23,6 +25,7 @@ class Program6 {
 			}
 			System.out.println();
 		}
+		System.out.println();
 	}
 
 	public static void four(int num) {
@@ -34,6 +37,7 @@ class Program6 {
 			ch++;
 			System.out.println();
 		}
+		System.out.println();
 	}
 	public static void five(int num) {
 		char ch='A';
@@ -43,6 +47,7 @@ class Program6 {
 			}
 			System.out.println();
 		}
+		System.out.println();
 	}
 	public static void six(int num) {
 		for(int row = 1; row <= num; row++){
@@ -52,14 +57,15 @@ class Program6 {
 			}
 			System.out.println();
 		}
+		System.out.println();
 	}
 
     public static void main(String[] args) {
-        // one(3);
-        // two(3);
-        // three(3);
-        // four(3);
-        // five(3);
-        // six(3);
+        one(3);
+        two(3);
+        three(3);
+        four(3);
+        five(3);
+        six(3);
     }
 }
