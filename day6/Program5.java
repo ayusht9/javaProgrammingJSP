@@ -11,9 +11,14 @@ class Program5 {
 	public static boolean isNeoNumber(int num){
 		return sumDigit(num)==num;
 	}
+
+	public static void neoRange(int high){
+		for(int i=1; i<=high; i++){
+			if(isNeoNumber(i))
+				System.out.print(i+" ");
+		}
+	}
     public static void main(String[] args) {
-        System.out.println(isNeoNumber(9));
-        System.out.println(isNeoNumber(1));
-        System.out.println(isNeoNumber(0));
+    	neoRange(100);
     }
 }
