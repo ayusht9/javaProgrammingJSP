@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Program4 {
-	public static int linearSearch(int[] arr, int search) {
+	public static boolean linearSearch(int[] arr, int search) {
 		boolean res = false;
 		for(int i: arr)
 			if(i==search){
