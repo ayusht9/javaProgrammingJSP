@@ -5,7 +5,7 @@ import java.util.Map;
 
 class CountCharacterOccurance {
 	public static void characterOccurance(String str) {
-		Map<Character,Integer> map = new HashMap<Character, Integer>();
+		Map<Character,Integer> map = new HashMap<>();
 
 		for(Character ch: str.toCharArray()){
 			if(map.containsKey(ch))

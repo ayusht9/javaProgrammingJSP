@@ -1,19 +1,6 @@
 import java.util.Arrays;
 
 class ArrayPallindrome {
-    public static int[] reverseArrayElementsOP(int[] a) { 
-        int start = 0;
-        int end = a.length-1;
-
-        while(start<end){
-            int temp = a[start];
-            a[start] = a[end];
-            a[end]=temp;
-            start++;end--;
-        }
-        return a;
-    }
-
     public static boolean pallindrome(char[] c){
         int start = 0;
         int end = c.length-1;

@@ -2,6 +2,7 @@ import java.util.HashMap;
 
 class CountOccurance {
 	public static HashMap<Integer,Integer> occurance(int[] a) {
+		
 		HashMap<Integer,Integer> hm = new HashMap<>();
 		for(int i: a){
 			if(hm.containsKey(i))

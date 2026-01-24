@@ -1,12 +1,10 @@
 class LinearSearch {
 	public static boolean linearSearch(int[] arr, int search) {
-		boolean res = false;
 		for(int i: arr)
 			if(i==search){
-				res = true;
-				break;			
+				return true;		
 			}
-		return res;
+		return false;
 	}
 
     public static void main(String[] args) {

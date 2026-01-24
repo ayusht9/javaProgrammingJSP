@@ -2,10 +2,10 @@ import java.lang.Integer;
 
 class MinMaxElement {
 	public static int maxArrayElement(int arr[]) {
-		int max=0;
+		int max=Integer.MIN_VALUE;
 
-		for(int i=1; i<=arr.length-1; i++){
-			if(arr[i]>arr[max])
+		for(int i=1; i<arr.length; i++){
+			if(arr[i]>max)
 				max=i;
 		}
 		return arr[max];
@@ -14,7 +14,7 @@ class MinMaxElement {
 	public static int minArrayElement(int arr[]) {
 		int min=Integer.MAX_VALUE;
 
-		for(int i=0; i<=arr.length-1; i++){
+		for(int i=0; i<arr.length; i++){
 			if(arr[i]<min)
 				min=arr[i];
 		}

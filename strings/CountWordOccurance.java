@@ -4,7 +4,7 @@ import java.util.Map;
 class CountWordOccurance {
 	public static void wordOccurance(String str) {
 
-		Map<String,Integer> map = new HashMap<String, Integer>();
+		Map<String,Integer> map = new HashMap<>();
 
 		for(String ch: str.split("\\s+")){
 			if(map.containsKey(ch))

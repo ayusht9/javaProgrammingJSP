@@ -1,16 +1,16 @@
 
 class DecimalBinaryConversion {
 	// decimal to binary
-	public static int toBinary(int num) {
-		int sum = 0;
+	public static int toBinary(int decimal) {
+		int binary = 0;
 		int pow = 1;
-		while (num > 0) {
-			int digit = num % 2;
-			sum += digit * pow;
-			num = num / 2;
+		while (decimal > 0) {
+			int digit = decimal % 2;
+			binary += digit * pow;
+			decimal = decimal / 2;
 			pow = pow * 10;
 		}
-		return sum;
+		return binary;
 	}
 
 	// binary to decimal

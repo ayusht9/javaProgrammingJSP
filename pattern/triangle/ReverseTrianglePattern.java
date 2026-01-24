@@ -1,4 +1,3 @@
-package triangle;
 class ReverseTrianglePattern {
     public static void pat1(int num) {
         for(int  row=1;row<=num;row++){
