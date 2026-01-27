@@ -6,22 +6,18 @@ class ArrayPallindrome {
         int end = c.length-1;
 
         while(start<end){
-            if(c[start]!=c[end])
+            if(c[start++]!=c[end--])
                 return false;
-            start++;
-            end--;
         }
 
         return true;
     }
 
     public static void main(String[] args) {
-    	int a[] = {1,2,3,4,5,6};
-        char c[] = {'m','a','d','a','m'};
-        char d[] = {'r','a','c','c','a','r'};
-        System.out.println(Arrays.toString(reverseArrayElementsOP(a)));
+        char a[] = {'m','a','d','a','m'};
+        char b[] = {'r','a','c','c','a','r'};
         
-        System.out.println(pallindrome(c));
-        System.out.println(pallindrome(d));
+        System.out.println(pallindrome(a));
+        System.out.println(pallindrome(b));
     }	
 }

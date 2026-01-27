@@ -1,4 +1,3 @@
-package triangle;
 class NumberTrianglePattern {
 	public static void mirror1(int num) {
 		for (int row=1; row<=num; row++) {
